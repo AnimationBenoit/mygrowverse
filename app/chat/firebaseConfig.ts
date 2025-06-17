@@ -1,21 +1,21 @@
-// firebaseConfig.ts
+// app/chat/firebaseConfig.ts
 
-// Import the necessary functions from the Firebase SDK
-import { initializeApp } from 'firebase/app'
-import { getAuth } from 'firebase/auth'
+// Import des fonctions Firebase
+import { initializeApp } from "firebase/app"
+import { getAuth } from "firebase/auth"
 
-// Your Firebase configuration object
+// Configuration Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyBEnljFU9mgwXpU3JDj3gOj1syvu-95jxc",
   authDomain: "mygrowverse.firebaseapp.com",
   projectId: "mygrowverse",
-  storageBucket: "mygrowverse.firebasestorage.app",
+  storageBucket: "mygrowverse.appspot.com", // Très important : .appspot.com
   messagingSenderId: "310946736369",
   appId: "1:310946736369:web:79e0062a10b14c65706150"
-};
+}
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig)
+// Initialisation de Firebase
+export const app = initializeApp(firebaseConfig)
 
-// Export Firebase Auth instance
+// Export Auth (optionnel si tu utilises Auth)
 export const auth = getAuth(app)
