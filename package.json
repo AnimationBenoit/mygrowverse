@@ -2,18 +2,20 @@
     "name": "mygrowverse",
     "version": "1.0.0",
     "scripts": {
-      "dev": "next dev",
-      "build": "next build",
-      "start": "next start"
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start"
     },
     "dependencies": {
-      "firebase": "^11.9.1",
-      "next": "^15.3.3",
-      "react": "^18.2.0",
-      "react-dom": "^18.2.0"
+        "autoprefixer": "^10.4.21",
+        "firebase": "^11.9.1",
+        "next": "^15.3.3",
+        "postcss": "^8.5.6",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "tailwindcss": "^4.1.10"
     },
     "engines": {
-      "node": "20.x"
+        "node": "20.x"
     }
-  }
-  
+}
